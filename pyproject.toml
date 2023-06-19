@@ -1,16 +1,17 @@
 [tool.poetry]
-name = "streamlit-search-result"
+name = "streamlit-image-tile"
 version = "0.1.0"
-description = "A streamlit component to list results of image search."
+description = "A streamlit component to tile images."
 authors = ["Tomoya Kose <tomoya@mitsuse.jp>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    {include = "search_result"}
+    {include = "image_tile"}
 ]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+streamlit = "^1.23.1"
 
 
 [tool.poetry.group.dev.dependencies]
