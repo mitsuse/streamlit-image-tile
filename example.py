@@ -23,8 +23,7 @@ def main() -> None:
     tile(seq_content=seq_content, columns=4, size=(180, 216), key="with_right")
 
     st.markdown("## Tile images without right attributions")
-    # seq_content=tuple(Content(image=image, caption=f"Dummy Image {x}", right=None) for x in range(6))
-    seq_content=tuple(Content(image=image, caption=f"Dummy Image {x}", right=None if x % 2 else right) for x in range(6))
+    seq_content=tuple(Content(image=image, caption=f"Dummy Image {x}", right=None) for x in range(6))
     tile(seq_content=seq_content, columns=4, size=(180, 216), key="without_right")
 
 
