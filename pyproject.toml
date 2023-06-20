@@ -8,6 +8,17 @@ readme = "README.md"
 packages = [
     {include = "image_tile"}
 ]
+include = [
+    "image_tile/frontend/build",
+]
+exclude = [
+    "image_tile/frontend/public",
+    "image_tile/frontend/node_modules",
+    "image_tile/frontend/src",
+    "image_tile/frontend/tsconfig.json",
+    "image_tile/frontend/package.json",
+    "image_tile/frontend/package-lock.json",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
