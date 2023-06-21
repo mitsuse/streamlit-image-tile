@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "streamlit-image-tile"
-version = "0.1.0"
+version = "0.1.1"
 description = "A streamlit component to tile images."
 authors = ["Tomoya Kose <tomoya@mitsuse.jp>"]
 license = "MIT"
@@ -9,7 +9,7 @@ packages = [
     {include = "image_tile"}
 ]
 include = [
-    "image_tile/frontend/build",
+    "image_tile/frontend/build/**/*",
 ]
 exclude = [
     "image_tile/frontend/public",
